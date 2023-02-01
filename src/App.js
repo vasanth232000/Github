@@ -11,7 +11,8 @@ import Home from "./pages/Home/Home";
 import Products from "./pages/Products/Products";
 import Product from "./pages/Product/Product";
 import Navbar from "./components/navbar/navbar";
-import Footer from "./components/footer/footer";
+import Footer from "./components/footer/Footer";
+import "./app.scss"
 
 const Layout =() =>{
   return(
