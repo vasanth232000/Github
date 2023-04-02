@@ -10,7 +10,7 @@ const{data,loading}=useFetch(
         item=>`&[filters][sub_categories][id][$eq]=${item}`)}
         &[filters][price][$lte]=${maxPrice}&sort=price:${sort}`
     )
-
+console.log(sort)
 
   return (
     <div className='list'>

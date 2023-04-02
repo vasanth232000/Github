@@ -7,10 +7,9 @@ import "./Products.scss"
 const Products = () => {
 
      
-  
+  const[sort,setSort] = useState("asc");
     const catId = parseInt(useParams().id)
     const[maxPrice,setPrice] = useState(2000);
-    const[sort,setSort] = useState("");
     const[selectedsubCat,setSelectedSubCat] = useState([]);
     console.log(catId);
 
@@ -47,12 +46,12 @@ const Products = () => {
         <div className='filterItem'>
           <h2>Sort By</h2>
           <div className="inputItem">
-            <input type="radio" id='asc' value="asc" name='price' onChange={e=>setSort("asc")}/>
+            <input type="radio" id='asc' value="asc"  name='price' onChange={(e)=>setSort("asc")}/>
             <label htmlFor="asc">Price (lowest Price)</label>
           </div>
           <div className="inputItem">
-            <input type="radio" id='desc' value="desc" name='price' onChange={e=>setSort("desc")}/>
-            <label htmlFor="desc">Price (lowest Price)</label>
+            <input type="radio" id='desc' value="desc" name='price' onChange={(e)=>setSort("desc")}/>
+            <label htmlFor="desc">Price (Highest Price)</label>
           </div>
         </div>
       </div>
