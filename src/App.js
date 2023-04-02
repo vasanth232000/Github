@@ -1,8 +1,10 @@
 import "./app.scss"
 import {
-  Outlet,
   createBrowserRouter,
   RouterProvider,
+  Route,
+  Link,
+  Outlet
 } from "react-router-dom";
 import Home from "./pages/Home/Home"
 import Navbar from "./components/navbar/navbar"
