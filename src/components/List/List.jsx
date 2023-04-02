@@ -11,7 +11,6 @@ const{data,loading}=useFetch(
         &[filters][price][$lte]=${maxPrice}&sort=price:${sort}`
     )
 
-    console.log(sort)
 
   return (
     <div className='list'>

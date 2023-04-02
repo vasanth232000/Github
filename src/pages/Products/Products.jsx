@@ -21,7 +21,6 @@ const Products = () => {
       setSelectedSubCat(isChecked?[...selectedsubCat,value]: selectedsubCat.filter((item)=>item !== value))
     }
 
-    console.log(selectedsubCat)
 
   return (
     <div className='products'>
