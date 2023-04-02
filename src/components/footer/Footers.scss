@@ -1,7 +1,8 @@
 .footer{
     margin: 5% 10% 2% 10%;
 
-    .top{
+    .top
+    {
         display: flex;
         gap: 50px;
 
@@ -25,7 +26,8 @@
         }
     }
 
-    .bottom{
+    .bottom
+    {
         display: flex;
         justify-content: space-between;
         margin-top: 50px;
@@ -51,7 +53,7 @@
         .right{
             width: 50%;
             display: flex;
-            justify-content: end;
+            justify-content: flex-end;
 
             img{
                 width: 80%;

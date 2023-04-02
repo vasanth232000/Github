@@ -2,12 +2,10 @@ import "./app.scss"
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
   Outlet
 } from "react-router-dom";
 import Home from "./pages/Home/Home"
-import Navbar from "./components/navbar/navbar"
+import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/footer/Footer"
 import Products from "./pages/Products/Products"
 import Product from "./pages/Product/Product"

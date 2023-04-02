@@ -1,20 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import Cart from '../Cart/Cart';
 import {Link} from "react-router-dom";
 import "./Navbar.scss";
 
 
-const navbar = () => {
+const Navbar = () => {
+  const[open,setOpen] = useState(false);
+
   return (
   <div className='navbar'>
     <div className='wrapper'>
       <div className='left'>
         <div className="item">
-          <img src="/img/en.png"/>
+          <img src="/img/en.png" alt='money'/>
           <KeyboardArrowDownIcon/>
         </div>
         <div className="item">
@@ -51,15 +54,16 @@ const navbar = () => {
             <SearchIcon/>
             <PersonIcon/>
             <FavoriteIcon/>
-            <div className="cart-icon">
+            <div className="cart-icon" onClick={()=>setOpen(!open)}>
               <ShoppingCartIcon/>
               <span>0</span>
             </div>
           </div>
         </div>
       </div>
+      {open && <Cart/>}
     </div>
   )
 }
 
-export default navbar
+export default Navbar
